@@ -1,8 +1,7 @@
 """
-	Bob's Intro to Brogramming in Python.
-
+	Intro to Brogramming in Python.
     Note: This is not a comprehensive instructional, there is a plethora
-		of solid trainings that can better deep dive concepts - so I will just
+	    	of solid trainings that can better deep dive concepts - so I will just
         brush over what I consider core concepts and try to relate them in a way
         that would have better helped me when I started out...
 """
@@ -40,6 +39,39 @@ print(f"Printing Variable 'this_is_a_valid_variable_name': {this_is_a_valid_vari
 """
 DATA TYPES
 
+	Theres several key data-types which are almost universal across all programming languages, though
+	their name may and is likely different.
+    
+    Text Type: str
+	Numeric Types: int, float, complex
+	Sequence Types: list, tuple, range
+	Mapping Type: dict
+	Set Types: set, frozenset
+	Boolean Type: bool
+	Binary Types: bytes, bytearray, memoryview
+	None Type: NoneType
+    
+    The key datatypes would be strings, integers, lists, dicts, tuples, bools, bytes and Nones.
+    
+    Key Notes:
+		Each data type will give you different functionality and trying to assign different types can cause error.
+        Variables don't care what they receive in python so you may want to check if what you dynamically receive is the correct type.
+"""
+# Examples:
 
-""" 
+string_variable = 'Hi, this is a representation of a string!'
+
+int_variable = 12345
+
+list_variable = [1,2,'lists can comprise various items', 4, 5, 'comma seperated', 'though not ideal to mix data-types in a list', 9999]
+
+dict_variable = {'Key1':'value', 'Key2':'Value2'}
+
+tuple_variable = (1,2)
+
+# Strings are characters, ints are numbers, lists are comma seperated elements which can be strings or numbers.
+# dictionaries are JSON like key-value pairs.
+
+
+
 
