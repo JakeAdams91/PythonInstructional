@@ -24,7 +24,7 @@ VARIABLES
         I recommened reviewing python PEP-8 for python standards that are accepted by most professional python devs.
         Following PEP-8 standards means most python code you review should follow similar patterns and make it easier to read.
         
-        e.g., EcamaScript (Javascript) it's standard to camelCase vars, in python underscore_notation is preferred.
+        e.g., EcmaScript (Javascript) it's standard to camelCase vars, in python underscore_notation is preferred.
     
     Key Notes:
 		You can declare a variable by writing a name and assigning a variable, you can't declare a unassigned variable
@@ -72,6 +72,33 @@ tuple_variable = (1,2)
 # Strings are characters, ints are numbers, lists are comma seperated elements which can be strings or numbers.
 # dictionaries are JSON like key-value pairs.
 
+"""
+	FUNCTIONALITY
+		Even the most complex code can be boiled down to a few key functions,
+        typically if/else statements or some form of a loops.
+        
+        if/else statements are pretty self explanitory.
+			Say you're going to the store to buy your spouse Whole milk, but IF they don't have whole milk, get 2%.
+            Congrats, you just completed a if/else block.
+
+            You can enhance this with elif (else-if) allowing you to daisy chain if statements.
+        
+        Once a condition is met, the code indented under that conditional will begin running.
+"""
+# Examples
+
+# variable with value of "Whole Milk" for the if/else examples.
+milk_store_stock = 'Whole Milk'
+
+if milk_store_stock == 'Whole Milk':
+    print("Woah! they've got whole milk")
+    # code to purchase the whole milk goes here
+elif milk_store_stock == '2% milk':
+    print("Damn! no whole milk, but they've got 2%.")
+	# code to handle 2% milk here
+else:
+    print("no whole milk nor 2%, what should we do?")
+    # code for this case goes here.
 
 
 
