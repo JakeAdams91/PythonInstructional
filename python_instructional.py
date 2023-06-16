@@ -19,7 +19,7 @@ VARIABLES
         
         That said there is a ton of debate and discussion around variable names, 
         for professional work and general code maintainability it's best to use concise but descriptive names.
-        (Many hours are burnt just picking the appropriate variable name...)
+        (Many hours are burnt just picking                               the appropriate variable name...)
 
         I recommened reviewing python PEP-8 for python standards that are accepted by most professional python devs.
         Following PEP-8 standards means most python code you review should follow similar patterns and make it easier to read.
@@ -35,6 +35,7 @@ ThisIsAValidVariableName = True
 print(f"Printing Variable 'ThisIsAValidVariableName': {ThisIsAValidVariableName}")
 this_is_a_valid_variable_name = True
 print(f"Printing Variable 'this_is_a_valid_variable_name': {this_is_a_valid_variable_name}")
+
 
 """
 DATA TYPES
@@ -63,22 +64,29 @@ string_variable = 'Hi, this is a representation of a string!'
 
 int_variable = 12345
 
+#lists are wwrapped in square brackets [ ]
 list_variable = [1,2,'lists can comprise various items', 4, 5, 'comma seperated', 'though not ideal to mix data-types in a list', 9999]
 
-dict_variable = {'Key1':'value', 'Key2':'Value2'}
+#dicts are wrapped in curly braces { }
+dict_variable = {'Key1':'value', 'Key2':'17827881238', 'Name':'Bob Cahill'}
 
+print(f"Printing dict_variable.name {dict_variable['Name']}")
+print("Printing dict_variable.name" + dict_variable['Name'])
+#tuples are wrapped in parenthesis ( )
 tuple_variable = (1,2)
 
 # Strings are characters, ints are numbers, lists are comma seperated elements which can be strings or numbers.
 # dictionaries are JSON like key-value pairs.
 
-"""
-	FUNCTIONALITY
+"""FUNCTIONALITY
 		Even the most complex code can be boiled down to a few key functions,
-        typically if/else statements or some form of a loops.
-        
+        typically if/else statements and some form of loops. (oversimplification, but still valid)
+"""
+
+"""
+	If/Elif/Else:
         if/else statements are pretty self explanitory.
-			Say you're going to the store to buy your spouse Whole milk, but IF they don't have whole milk, get 2%.
+			Say you're going to the store to buy your spouse Whole milk, but "IF they don't have whole milk, get 2%."
             Congrats, you just completed a if/else block.
 
             You can enhance this with elif (else-if) allowing you to daisy chain if statements.
@@ -98,7 +106,12 @@ elif milk_store_stock == '2% milk':
 	# code to handle 2% milk here
 else:
     print("no whole milk nor 2%, what should we do?")
-    # code for this case goes here.
+    # code to handle there being no Whole Milk or 2% milk goes here...
+
+"""
+	For Loop:
+		the amazing for loop.     
+"""
 
 
-
+# TO BE CONTINUED...
