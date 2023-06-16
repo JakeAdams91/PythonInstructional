@@ -9,7 +9,7 @@
 """
 VARIABLES
 	Variables are just objects you can assign a varying "variable" number of values to.
-    Python is a littler looser in variable declaration than other stronger typed languages.
+    Python is a little looser in variable declaration than other stronger typed languages.
     
     Variables are critical to development, used to store hard-coded or dynamic values.
     
@@ -19,9 +19,10 @@ VARIABLES
         
         That said there is a ton of debate and discussion around variable names, 
         for professional work and general code maintainability it's best to use concise but descriptive names.
-        (Many hours are burnt just picking                               the appropriate variable name...)
+        (Many hours are burnt just picking the appropriate variable name...)
 
-        I recommened reviewing python PEP-8 for python standards that are accepted by most professional python devs.
+        I recommened reviewing python PEP-8 https://peps.python.org/pep-0008/
+        for python standards that are accepted by most professional python devs.
         Following PEP-8 standards means most python code you review should follow similar patterns and make it easier to read.
         
         e.g., EcmaScript (Javascript) it's standard to camelCase vars, in python underscore_notation is preferred.
@@ -34,6 +35,11 @@ VARIABLES
 ThisIsAValidVariableName = True
 print(f"Printing Variable 'ThisIsAValidVariableName': {ThisIsAValidVariableName}")
 this_is_a_valid_variable_name = True
+print(f"Printing Variable 'this_is_a_valid_variable_name': {this_is_a_valid_variable_name}")
+
+# You can then re-assign variables values after initial use:
+this_is_a_valid_variable_name = False
+#You'll notice when ran, the printed output will now be False...
 print(f"Printing Variable 'this_is_a_valid_variable_name': {this_is_a_valid_variable_name}")
 
 
@@ -59,24 +65,22 @@ DATA TYPES
         Variables don't care what they receive in python so you may want to check if what you dynamically receive is the correct type.
 """
 # Examples:
+string_example = 'Hi, this is a representation of a string!'
 
-string_variable = 'Hi, this is a representation of a string!'
+int_example = 12345
 
-int_variable = 12345
+float_example = 3.14
 
-#lists are wwrapped in square brackets [ ]
-list_variable = [1,2,'lists can comprise various items', 4, 5, 'comma seperated', 'though not ideal to mix data-types in a list', 9999]
+#lists are wrapped in square brackets [ ]
+list_example = [1,2, 4, 5, 9999]
+list_example_2 = ['list', 'of', 'strings']
+# you can also have lists of tuples, dicts and other objects!
 
-#dicts are wrapped in curly braces { }
-dict_variable = {'Key1':'value', 'Key2':'17827881238', 'Name':'Bob Cahill'}
+#dicts are wrapped in curly braces { } and comprise of Key:Value pairs. 
+dict_variable = {'Key1':'value', 'Key2':'17827881238', 'Name':'John Doe', 'Age':39}
 
-print(f"Printing dict_variable.name {dict_variable['Name']}")
-print("Printing dict_variable.name" + dict_variable['Name'])
-#tuples are wrapped in parenthesis ( )
+#tuples are wrapped in parenthesis ( ) and are immutable.
 tuple_variable = (1,2)
-
-# Strings are characters, ints are numbers, lists are comma seperated elements which can be strings or numbers.
-# dictionaries are JSON like key-value pairs.
 
 """FUNCTIONALITY
 		Even the most complex code can be boiled down to a few key functions,
